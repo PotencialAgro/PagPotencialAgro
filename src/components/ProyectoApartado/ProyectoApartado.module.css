@@ -1,0 +1,79 @@
+.Card{
+    width: 20%;
+    height: auto;
+    display: flex;
+}
+#CardTrazabilidad{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+#GralContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#PrinDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.tituloYbuton{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.cardInfo{
+    display: flex;
+    margin-bottom: 1vw;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px;
+    padding: 1vw;
+    background-color: #d3e0cc;
+    color: #0D2833;
+}
+
+#titulo{
+    font-size: 3vw;
+    color: #d3e0cc;
+}
+
+
+.cardInfo h3{
+    text-align: center;
+}
+
+@media (min-width: 792px) {
+    #PrinDiv{
+        flex-direction: row;
+        gap: 2vw;
+    }
+}   
+
+
+@media (max-width: 792px) {
+
+    .cardInfoH3{
+        font-size: 1rem;
+    }
+
+    #PrinDiv{
+        flex-direction: column;
+    }
+
+    #titulo{
+        font-size: 3vh;
+    }
+}
+  

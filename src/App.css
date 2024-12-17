@@ -1,0 +1,80 @@
+
+
+#ContainerGral{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+#PrincipalDiv{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  height: 47.5vw;
+  min-height: 40vw;
+}
+
+#PrincipalDiv::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/cosecha-trigo-prado-tranquilo-al-atardecer-generado-ia.jpg');
+  background-size: cover; /* Para que la imagen ocupe todo el div */
+  background-position: center; /* Para centrar la imagen */
+  opacity: 0.45; /* Controla la opacidad solo de la imagen */
+  z-index: -1; /* Mantiene la imagen detrás del contenido */
+}
+
+#SecundaryDiv{
+  background-image: radial-gradient(circle, #d3e0cc, #bcd6a8, #a6cc82, #93c159, #81b527); 
+  height: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #152c3a;
+}
+
+
+#TercerDiv{
+  background-color: #111111;
+  width: 99vw;
+  height: 50vw;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  color: #81b528;
+}
+
+#DocumentacionDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 99vw;
+  background: -webkit-linear-gradient(180deg, #111111,#0d2833);                   
+  background: linear-gradient(180deg, #111111,#0d2833);                                          
+}
+
+#PiePagina{
+  width: 100vw;
+  height: 100%;
+  bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+  /* Estilos específicos para pantallas pequeñas */
+  #PrincipalDiv, #TercerDiv{
+    width: 100vw;
+    height: 100vh;
+  }
+  #SecundaryDiv, #DocumentacionDiv{
+    height: auto;
+  }
+  
+
+}
